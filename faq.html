@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Career Launch 360</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Career Launch</span>
+                    <span class="logo-accent">360°</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="it-training.html" class="nav-link">IT Training</a>
+                    <a href="study-abroad.html" class="nav-link">Study Abroad</a>
+                    <a href="career-counseling.html" class="nav-link">Career Counseling</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="faq.html" class="nav-link active">FAQ</a>
+                </div>
+                <a href="contact.html" class="btn-primary nav-cta">Book Consultation</a>
+                <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero faq-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge">Got Questions?</div>
+                <h1 class="page-title">Frequently Asked <span class="gradient-text">Questions</span></h1>
+                <p class="page-subtitle">
+                    Find answers to common questions about our programs, services, and processes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-container">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What courses do you offer?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer comprehensive IT training programs including Full Stack Web Development, Machine Learning & AI, Data Science & Analytics, Cloud Computing, and more. All courses are designed with industry requirements in mind and include hands-on projects and placement support.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide placement assistance?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We provide comprehensive placement assistance including resume building, interview preparation, mock interviews, and direct connections with hiring companies. Our placement rate is 95% and we have partnerships with top tech companies.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Which countries do you help students apply to?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We assist students with applications to universities in the USA, UK, Canada, Australia, Germany, Ireland, New Zealand, and other popular study destinations. Our counselors have expertise in various education systems and can guide you to the best options based on your profile.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is the duration of your IT training programs?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Course duration varies by program. Full Stack Development is 6 months, Machine Learning is 5 months, and Data Science is 4 months. All programs include flexible timings with both weekday and weekend batches available.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you offer online or offline classes?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer both online and offline classes to suit your preferences. Our online classes are live and interactive with the same quality as offline sessions. You can choose the mode that works best for you.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What are the eligibility criteria for your courses?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most of our IT courses are open to anyone interested in learning tech skills, regardless of educational background. For some advanced courses like Machine Learning, basic programming knowledge is recommended. We assess each student's background during the counseling session.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How much does career counseling cost?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer a free initial consultation session to understand your goals and recommend the best path forward. After that, our counseling packages are competitively priced based on the level of support you need. Contact us for detailed pricing information.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is your refund policy?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We have a transparent refund policy. If you're not satisfied with our services within the first 15 days of enrollment (before 3 classes), you can request a full refund. After that period, refunds are processed on a case-by-case basis. Please refer to our terms and conditions for complete details.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you help with visa applications?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we provide complete visa assistance including documentation preparation, application filing, interview preparation, and follow-up. Our team has extensive experience with visa processes for all major study destinations and has a high success rate.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I get a certificate after completing the course?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, upon successful completion of the course and all projects, you will receive an industry-recognized certificate from Career Launch 360. This certificate is valued by employers and demonstrates your proficiency in the relevant technologies.
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <p style="font-size: 18px; color: var(--gray); margin-bottom: 24px;">
+                    Still have questions? We're here to help!
+                </p>
+                <a href="contact.html" class="btn-primary btn-large">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">Career Launch</span>
+                        <span class="logo-accent">360°</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for IT training, career counseling, and overseas education guidance.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="it-training.html">IT Training</a></li>
+                        <li><a href="study-abroad.html">Study Abroad</a></li>
+                        <li><a href="career-counseling.html">Career Counseling</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="it-training.html">Full Stack Development</a></li>
+                        <li><a href="it-training.html">Machine Learning</a></li>
+                        <li><a href="it-training.html">Data Science</a></li>
+                        <li><a href="career-counseling.html">Career Counseling</a></li>
+                        <li><a href="career-counseling.html">Interview Preparation</a></li>
+                        <li><a href="study-abroad.html">Visa Guidance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Your City, Your Country</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>✉️ info@careerlaunch360.org</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Career Launch 360. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

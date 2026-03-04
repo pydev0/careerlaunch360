@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Launch 360 - Transform Your Career Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Career Launch</span>
+                    <span class="logo-accent">360°</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="it-training.html" class="nav-link">IT Training</a>
+                    <a href="study-abroad.html" class="nav-link">Study Abroad</a>
+                    <a href="career-counseling.html" class="nav-link">Career Counseling</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </div>
+                <a href="contact.html" class="btn-primary nav-cta">Book Consultation</a>
+                <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Your Career Transformation Partner</div>
+                <h1 class="hero-title">
+                    Launch Your Dream Career with
+                    <span class="gradient-text">Expert Guidance</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Comprehensive career counseling, IT training, and study abroad services 
+                    designed to elevate your professional journey to new heights.
+                </p>
+                <div class="hero-cta">
+                    <a href="contact.html" class="btn-primary btn-large">Start Your Journey</a>
+                    <a href="#services" class="btn-secondary btn-large">Explore Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Success Stories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Placement Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Partner Universities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Comprehensive Career Solutions</h2>
+                <p class="section-subtitle">End-to-end support for every stage of your career journey</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card card-accent-blue">
+                    <div class="service-icon"><i data-lucide="graduation-cap"></i></div>
+                    <h3 class="service-title">Study Abroad</h3>
+                    <p class="service-description">
+                        Complete guidance for studying in USA, UK, Canada, Australia, and more. 
+                        From university selection to visa assistance and beyond.
+                    </p>
+                    <ul class="service-features">
+                        <li>University Selection</li>
+                        <li>Application Support</li>
+                        <li>Visa Guidance</li>
+                        <li>Scholarship Assistance</li>
+                    </ul>
+                    <a href="study-abroad.html" class="service-link">Explore Programs →</a>
+                </div>
+
+                <div class="service-card card-accent-purple">
+                    <div class="service-icon"><i data-lucide="laptop"></i></div>
+                    <h3 class="service-title">IT Training</h3>
+                    <p class="service-description">
+                        Industry-ready training in Full Stack Development, Machine Learning, 
+                        Data Science, and Cloud Computing with hands-on projects.
+                    </p>
+                    <ul class="service-features">
+                        <li>Full Stack Development</li>
+                        <li>Machine Learning & AI</li>
+                        <li>Data Science</li>
+                        <li>Cloud Technologies</li>
+                    </ul>
+                    <a href="it-training.html" class="service-link">View Courses →</a>
+                </div>
+
+                <div class="service-card card-accent-green">
+                    <div class="service-icon"><i data-lucide="target"></i></div>
+                    <h3 class="service-title">Career Counseling</h3>
+                    <p class="service-description">
+                        Personalized career guidance, resume building, interview preparation, 
+                        and placement support to land your dream job.
+                    </p>
+                    <ul class="service-features">
+                        <li>One-on-One Counseling</li>
+                        <li>Resume Optimization</li>
+                        <li>Interview Coaching</li>
+                        <li>Job Placement Support</li>
+                    </ul>
+                    <a href="career-counseling.html" class="service-link">Get Started →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT Training Programs -->
+    <section class="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Popular Programs</span>
+                <h2 class="section-title">Industry-Leading IT Training</h2>
+                <p class="section-subtitle">Master the skills that top companies are looking for</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-visual">
+                        <div class="program-icon"><i data-lucide="zap"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <h3 class="program-title">Full Stack Web Development</h3>
+                        <p class="program-description">
+                            Master frontend and backend technologies to build complete web applications from scratch.
+                        </p>
+                        <div class="program-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Next.js</span>
+                        </div>
+                        <a href="it-training.html" class="program-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-visual">
+                        <div class="program-icon"><i data-lucide="bot"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <h3 class="program-title">Machine Learning & AI</h3>
+                        <p class="program-description">
+                            Learn AI and ML algorithms to build intelligent systems and predictive models.
+                        </p>
+                        <div class="program-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Neural Networks</span>
+                        </div>
+                        <a href="it-training.html" class="program-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-visual">
+                        <div class="program-icon"><i data-lucide="bar-chart-2"></i></div>
+                    </div>
+                    <div class="program-content">
+                        <h3 class="program-title">Data Science & Analytics</h3>
+                        <p class="program-description">
+                            Analyze and visualize data to extract insights and drive business decisions.
+                        </p>
+                        <div class="program-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Statistics</span>
+                        </div>
+                        <a href="it-training.html" class="program-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programs-cta">
+                <p class="cta-text">Not sure which course is right for you?</p>
+                <a href="contact.html" class="btn-secondary">Talk to Our Counselors</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Abroad Countries -->
+    <section class="countries">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Global Opportunities</span>
+                <h2 class="section-title">Your Gateway to World-Class Education</h2>
+                <p class="section-subtitle">Study at prestigious universities in your dream destination</p>
+            </div>
+
+            <div class="countries-grid">
+                <div class="country-card">
+                    <div class="country-flag">🇺🇸</div>
+                    <h3 class="country-name">United States</h3>
+                    <ul class="country-features">
+                        <li>Top-ranked universities</li>
+                        <li>Research opportunities</li>
+                        <li>Work authorization options</li>
+                        <li>Diverse culture</li>
+                    </ul>
+                </div>
+
+                <div class="country-card">
+                    <div class="country-flag">🇬🇧</div>
+                    <h3 class="country-name">United Kingdom</h3>
+                    <ul class="country-features">
+                        <li>Shorter degree duration</li>
+                        <li>Rich heritage</li>
+                        <li>Post-study work visa</li>
+                        <li>Global recognition</li>
+                    </ul>
+                </div>
+
+                <div class="country-card">
+                    <div class="country-flag">🇨🇦</div>
+                    <h3 class="country-name">Canada</h3>
+                    <ul class="country-features">
+                        <li>Affordable education</li>
+                        <li>PR pathways</li>
+                        <li>Safe environment</li>
+                        <li>Multicultural society</li>
+                    </ul>
+                </div>
+
+                <div class="country-card">
+                    <div class="country-flag">🇦🇺</div>
+                    <h3 class="country-name">Australia</h3>
+                    <ul class="country-features">
+                        <li>High quality of life</li>
+                        <li>Work while studying</li>
+                        <li>Strong economy</li>
+                        <li>Beautiful landscapes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="countries-cta">
+                <a href="study-abroad.html" class="btn-primary btn-large">Explore Study Abroad Options</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Help -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Approach</span>
+                <h2 class="section-title">How We Help You Succeed</h2>
+                <p class="section-subtitle">Comprehensive support from training to placement and beyond</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i data-lucide="users"></i></div>
+                    <h3 class="step-title">Expert IT Training</h3>
+                    <p class="step-description">
+                        Industry-relevant courses taught by experienced professionals with real-world projects
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i data-lucide="target"></i></div>
+                    <h3 class="step-title">Career Counseling</h3>
+                    <p class="step-description">
+                        Personalized guidance to identify your strengths and chart your career path
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i data-lucide="briefcase"></i></div>
+                    <h3 class="step-title">Interview Preparation</h3>
+                    <p class="step-description">
+                        Mock interviews, resume building, and strategies to ace your dream job interview
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i data-lucide="plane"></i></div>
+                    <h3 class="step-title">Study Abroad Support</h3>
+                    <p class="step-description">
+                        Complete assistance with university applications, visa processing, and documentation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Success Stories</span>
+                <h2 class="section-title">Hear From Our Students</h2>
+                <p class="section-subtitle">Real stories from people who transformed their careers with us</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Career Launch 360's Full Stack program transformed my career completely. 
+                            The hands-on projects and excellent interview prep helped me land my dream 
+                            job at Google as a Software Engineer."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <div class="author-name">Priya Sharma</div>
+                            <div class="author-position">Software Engineer at Google</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Thanks to Career Launch 360's guidance, I got admission to MIT with a 
+                            scholarship. Their visa support and application assistance made the entire 
+                            process smooth and stress-free."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <div class="author-name">Rahul Kumar</div>
+                            <div class="author-position">Master's Student at MIT</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "The Data Science course gave me practical skills that employers value. 
+                            Within 2 months of completing the program, I received multiple job offers 
+                            and joined Microsoft."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AR</div>
+                        <div class="author-info">
+                            <div class="author-name">Ananya Reddy</div>
+                            <div class="author-position">Data Scientist at Microsoft</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Career Launch 360 helped me secure admission to the University of Toronto. 
+                            Their counselors understood my goals and guided me through every step of the 
+                            application process."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VS</div>
+                        <div class="author-info">
+                            <div class="author-name">Vikram Singh</div>
+                            <div class="author-position">Student at University of Toronto</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "The Machine Learning program was intense but incredibly rewarding. The career 
+                            counseling and mock interviews prepared me perfectly for Amazon's rigorous 
+                            interview process."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SP</div>
+                        <div class="author-info">
+                            <div class="author-name">Sneha Patel</div>
+                            <div class="author-position">ML Engineer at Amazon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "As a fresher, I was struggling to find opportunities. Career Launch 360's 
+                            training and placement support helped me build a strong portfolio and land a 
+                            role at Infosys."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <div class="author-name">Arjun Mehta</div>
+                            <div class="author-position">Developer at Infosys</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-cta">
+                <p class="cta-text">Want to be our next success story?</p>
+                <a href="contact.html" class="btn-primary btn-large">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">Career Launch</span>
+                        <span class="logo-accent">360°</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for IT training, career counseling, and overseas education guidance. 
+                        Empowering individuals to achieve their dreams.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="it-training.html">IT Training</a></li>
+                        <li><a href="study-abroad.html">Study Abroad</a></li>
+                        <li><a href="career-counseling.html">Career Counseling</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="it-training.html">Full Stack Development</a></li>
+                        <li><a href="it-training.html">Machine Learning</a></li>
+                        <li><a href="it-training.html">Data Science</a></li>
+                        <li><a href="career-counseling.html">Career Counseling</a></li>
+                        <li><a href="career-counseling.html">Interview Preparation</a></li>
+                        <li><a href="study-abroad.html">Visa Guidance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Your City, Your Country</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>✉️ info@careerlaunch360.org</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Career Launch 360. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
