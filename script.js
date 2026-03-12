@@ -6,27 +6,25 @@ function toggleFAQ(element) {
     if (!isActive) faqItem.classList.add('active');
 }
 
-// Contact Form Submission
+// Contact Form Submission → WhatsApp
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
+        contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            const response = await fetch('https://formspree.io/f/dummy@example.com', {
-                method: 'POST',
-                headers: { 'Accept': 'application/json' },
-                body: new FormData(contactForm)
-            });
-            if (response.ok) {
-                submitBtn.textContent = 'Message Sent!';
-                contactForm.reset();
-            } else {
-                submitBtn.textContent = 'Failed. Try Again.';
-                submitBtn.disabled = false;
-            }
+
+            const name    = contactForm.querySelector('[name="name"]')?.value || '';
+            const email   = contactForm.querySelector('[name="email"]')?.value || '';
+            const phone   = contactForm.querySelector('[name="phone"]')?.value || '';
+            const service = contactForm.querySelector('[name="service"]')?.value || '';
+            const message = contactForm.querySelector('[name="message"]')?.value || '';
+
+            const text = `*New Enquiry - Career Launch 360*\n\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Service:* ${service}\n*Message:* ${message}`;
+
+            const whatsappURL = `https://wa.me/918333883807?text=${encodeURIComponent(text)}`;
+            window.open(whatsappURL, '_blank');
+
+            contactForm.reset();
         });
     }
 });
